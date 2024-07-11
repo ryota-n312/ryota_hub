@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ヘッダー */
+header {
+  width: 1160px;
+  padding: 20px 0;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+header,
+nav .link-list {
+  display: flex;
+  align-items: center;
+}
+
+.link-list__item+.link-list__item {
+  margin-left: 20px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* メインビジュアル */
+section p {
+  margin-left: 100px;
+  width: 580px;
+}
+
+/* メインビジュアル画像 */
+.mv-img {
+  background: url(../img/slide-1.jpg) center center / cover no-repeat;
+  height: 700px;
+  margin: 50px auto;
+}
+
+
+.txt,
+.pic ul,
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txt,
+.pic ul {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.txt {
+  margin: 50px auto;
+  width: 1200px;
+}
+
+.txt p {
+  text-align: start;
+  margin-left: 0px;
+}
+
+.txt p,
+li img {
+  width: 530px;
+}
+
+
+/* section 4画像 */
+.pic {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+li img {
+  height: 350px;
+}
+
+
+/*フッター*/
+footer {
+  text-align: center;
+}
+
+footer img {
+  width: 100px;
+  height: 100px;
+  margin: 30px 0;
+}

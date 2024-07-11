@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.result {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#total {
+  font-size: 30px;
+  color: rgb(238, 82, 82);
+}

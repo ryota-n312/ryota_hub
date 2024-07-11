@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>フォームバリデーション</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <div class="conatainer">
+    <div class="row" style="margin-top: 100px;">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <h1>フォームバリデーション</h1>
+        <form method="post" action="thanks.html" style="margin-top: 50px;" id="form">
+          <div class="form-group">
+            <label>名前 ※必須</label>
+            <input type="text" name="name" class="form-control" placeholder="名無し" id="name">
+            <p class="err-txt" id="err-name"></p>
+          </div>
+          <div class="form-group">
+            <label>フリガナ ※必須 全角カタカナ</label>
+            <input type="text" class="form-control" name="kana" placeholder="ナナシ" id="kana">
+            <p class="err-txt" id="err-kana"></p>
+          </div>
+          <div class="form-group">
+            <label>電話番号 ※ハイフンなしの半角数字</label>
+            <input type="text" name="tel" class="form-control" placeholder="00012345678" id="tel">
+            <p class="err-txt" id="err-tel"></p>
+          </div>
+          <div class="form-group">
+            <label>メールアドレス ※必須</label>
+            <input type="text" name="mail" class="form-control" placeholder="test@mail.com" id="mail">
+            <p class="err-txt" id="err-mail"></p>
+          </div>
+          <button class="btn btn-default btn-primary" id="submit">送信</button>
+        </form>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+  </div><!-- container -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="common.js"></script>
+</body>
+</html>

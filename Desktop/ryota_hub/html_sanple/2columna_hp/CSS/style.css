@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  display: flex;
+  max-width: 1440px;
+  min-width: 1200px;
+  justify-content: center;
+}
+
+.container {
+  padding-left: 60px;
+}
+
+a,
+h1,
+.contact__inner input[type="submit"],
+button {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: .3s all;
+}
+
+a:hover {
+  opacity: .6;
+  color: yellow;
+}
+
+h1,
+p,
+main>img,
+.link-list__item,
+.About__col2 {
+  margin-bottom: 60px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+
+header img,
+h2,
+h3 {
+  color: #164a84;
+  margin-bottom: 20px;
+}
+
+/*左カラム*/
+header {
+  flex-direction: column;
+  flex-basis: 30%;
+  align-items: center;
+  height: auto;
+  padding: 60px 120px;
+}
+
+/*右カラム*/
+main {
+  flex-basis: 70%;
+}
+
+p {
+  text-align: start;
+  line-height: 2;
+}
+
+
+
+/*kv*/
+
+main>img {
+  width: 1090px;
+}
+
+
+/*About*/
+
+
+header,
+.About,
+.inq__col {
+  display: flex;
+}
+
+.figure {
+  flex-basis: 0;
+}
+
+.aside,
+.figure:last-child,
+.inquiry p {
+  margin-left: 30px;
+}
+
+section p,
+.About__col2 p {
+  font-size: 20px;
+}
+
+button,
+.contact__inner input[type="submit"] {
+  font-size: 30px;
+}
+
+button {
+  width: 300px;
+  height: 80px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+header,
+button,
+.contact__inner input[type="submit"] {
+  background-color: #164a84;
+}
+
+
+
+/* ギャラリー */
+.gal1 ul,
+.gal2 ul,
+.gal3 ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gal1 img,
+.gal2 img,
+.gal3 img {
+  height: 200px;
+  margin-bottom: 80px;
+}
+
+.gal2 img {
+  height: 220px;
+}
+
+.gal3 img {
+  height: 250px;
+}
+
+/* 問い合わせフォーム */
+
+.inquiry {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.contact__inner input[type="text"],
+.contact__inner input[type="email"] {
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+.contact__inner input[type="text"],
+.contact__inner input[type="email"],
+.contact__inner textarea,
+.contact__inner input[type="submit"] {
+  display: block;
+}
+
+.contact__inner input[type="text"],
+.contact__inner input[type="email"],
+.contact__inner textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+.contact__inner textarea {
+  resize: none;
+  height: 170px;
+}
+
+button,
+.contact__inner input[type="submit"] {
+  border: none;
+}
+
+.contact__inner input[type="submit"] {
+  margin: 20px 0;
+  width: 150px;
+  height: 80px;
+  line-height: 60px;
+}
+
+::placeholder {
+  color: #164a84;
+}
+
+footer a {
+  color: #0000EE;
+}
+
+/* 追加修正 */
+
+.inquiry h3 {
+  width: 600px;
+}
+
+form {
+  width: 450px;
+}
+
+.inquiry p {
+  width: 400px;
+}
